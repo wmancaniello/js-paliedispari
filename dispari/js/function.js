@@ -3,18 +3,26 @@
 
 /**
  * Descrizione: generare un numero random compreso tra 1 e 5
+ * @param {number} min
+ * @param {number} max
  * @returns {number}
  */
-function rndNumber() {
-  return Math.floor(Math.random() * 5) + 1;
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//  Controllo se la somma dei numeri è pari o dispari
+// test
+// console.log(getRndInteger(1, 10));
 
 /**
- * Description
- * @param {any}
- * @param {any}
- * @returns {any}
+ * Descrizione: la funzione che definisce se un numero è pari o dispari
+ * @param {number} numToCheck
+ * @returns {string} "pari" se il numero è pari, "dispari" al contrario
  */
-function checkPariDispari() {}
+function isEvenOdd(numToCheck) {
+  if (numToCheck % 2 === 0) {
+    return "pari";
+  } else {
+    return "dispari"
+  }
+}
