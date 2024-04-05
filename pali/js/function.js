@@ -16,3 +16,5 @@ function parolaPalindroma(palindroma) {
     
     return palindroma === parolaAlContrario
 }
+
+// Aggiungere verifica maiuscola (?)
